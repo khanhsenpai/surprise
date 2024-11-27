@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bất ngờ cho em</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #heart {
+      font-size: 100px;
+      color: red;
+      display: none;
+    }
+    #message {
+      font-size: 40px;
+      color: #333;
+      display: none;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e91e63;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bấm vào để nhận bất ngờ! 💖</h1>
+  <button onclick="showHeart()">Bấm vào đây</button>
+  <div id="heart">❤️</div>
+  <button id="revealButton" onclick="showMessage()" style="display: none;">Bấm thêm lần nữa!</button>
+  <div id="message">Anh yêu em! 💕</div>
+
+  <script>
+    function showHeart() {
+      document.getElementById('heart').style.display = 'block';
+      document.getElementById('revealButton').style.display = 'inline-block';
+    }
+
+    function showMessage() {
+      document.getElementById('message').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
